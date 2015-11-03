@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}success{% endblock %}
+{% block containercontent %}
+<h2>success</h2>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>{{ source_type }} value</th>
+        <th>{{ new_type }} value</th>
+    </thead>
+    <tbody>
+      {% for c in converted %}
+      <tr>
+        <td>{{ c[0] }}</td>
+        <td>{{ c[1] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<div>
+  <p><a href="{{ url_for('index') }}">Convert more numbers</a></p>
+</div>
+{% endblock %}
