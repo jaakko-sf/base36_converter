@@ -54,6 +54,10 @@ def post_request():
   converted = []
 
   for i in values:
+    # skip empty lines
+    if not i:
+      continue
+
     if source_type == 'base10':
       new_value = base36encode(int(i))
     else:
