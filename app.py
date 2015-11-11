@@ -103,4 +103,4 @@ def base36decode(number):
 
 
 if __name__ == '__main__':
-  app.run(debug=True)
+  app.run(debug=False)
