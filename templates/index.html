@@ -4,7 +4,7 @@
   <div class="hero-unit">
     <p>Either enter a list of base10 values, to convert to base36, or vice-versa. Each should be on it's own line in the input.</p>
   </div>
-  <form role="form" method="POST" action"/">
+  <form role="form" method="POST" action="{{ url_for('convert') }}">
     <div class="form-group">
       <label for="source_values">Convert these numbers:</label>
       <textarea class="form-control" rows="10" name="source_values" id="source_values"></textarea>

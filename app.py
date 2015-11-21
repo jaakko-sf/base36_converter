@@ -14,8 +14,8 @@ def index():
   return render_template('index.html')
 
 
-@app.route('/', methods=['POST'])
-def post_request():
+@app.route('/convert', methods=['POST'])
+def convert():
 
   source_type = None
   source_values = None
